@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    teste
+{% endblock title %}
+
+
+{% block body %}
+
+    <h1>Calculadora de Juros</h1>
+    
+    <form action=" {% url 'resultado' %}" method="post">
+        {% csrf_token %}
+            
+            Capital Inicial: <input type="number" name="capital_inicial" id="id_capital_inicial" step="any" required>
+                <br><br>
+            Taxa de juros por periodo(%): <input type="number" name="taxa_de_juros_por_periodo" id="id_taxa_de_juros_por_periodo" step="any" required>
+                <br><br>
+            Número de Periodos(meses): <input type="number" name="num_de_periodos" id="id_num_de_periodos" step="any" required>
+                <br><br>
+
+        <button type="submit">Calcular</button>
+
+    </form>
+{% endblock body %}
+    

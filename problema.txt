@@ -1,0 +1,2 @@
+7 - Calculadora de Juros
+Implemente um programa que calcule juros compostos com base em um valor principal, taxa de juros e período.
